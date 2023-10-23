@@ -1,11 +1,54 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
 body {
-    background-color: rgb(130, 238, 184);
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Style the header */
+h1 {
     text-align: center;
 }
 
-img{
-    border: 5px solid whitesmoke;
-    width: 300px;
+/* Style the content divs */
+.content {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
 }
-.content1{
+
+/* Style the name and name-thai paragraphs */
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.name-thai {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Style the list items */
+ul li {
+    margin: 5px 0;
+}
+
+/* Style the links */
+ul li a {
+    text-decoration: none;
+    color: #0077cc;
+}
+
+/* Style the profile picture */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
 }
