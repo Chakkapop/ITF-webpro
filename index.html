@@ -3,35 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script>
+        function display(){
+            document.getElementById("myusername").innerHTML = document.getElementById("username").value + "'s Gallery"
+            console.log(document.getElementById("username").value);
+        }
+        function setimage(){
+            document.getElementById("avatarr").style.background = "url("+ document.getElementById("image_url").value + ")";
+        }
+    </script>
 </head>
 <body>
-    <h1>Resume</h1>
     <div class="content">
-        <p class="name">Chakkapop Buachan</p>
-        <p class="name-thai">จักรภพ บัวจันทร์</p>
-    </div>
-    <img src="215999565_1130786480776408_4042044691555411483_n.jpg" alt="Profile Picture" width="500" height="500">
-    <div class="content">
-        <p>Date of Birth</p>
-        <p>8 July 2005</p>
-    </div>
-    <div class="content">
-        <p>Education</p>
-        <ul>
-            <li>Elementary School: โรงเรียนทินกรพิทยานุสรณ์</li>
-            <li>Middle School: โรงเรียนเศรษฐบุตรบำเพ็ญ</li>
-            <li>Technical College: วิทยาลัยเทคนิคมีนบุรี</li>
-            <li>Bachelor's Degree: สจล.</li>
-        </ul>
-    </div>
-    <div class="content">
-        <p>Contact</p>
-        <ul>
-            <li><a href="https://www.facebook.com/profile.php?id=100015352006491">Facebook</a></li>
-            <li><a href="https://www.instagram.com/fadint12/">Instagram</a></li>
-        </ul>
-    </div>
+        <div class="flextop">
+            <div class="flexitem1">
+                <!-- Avatar -->
+                <div class="avatar" id="avatarr" ></div>
+                <div class="noti">2</div>
+            </div>
+            <div><P style="font-weight: 700;" id="myusername">Username Gallery</P></div>
+
+            <div class="flexitem2">
+                <div></label>Username<label><input type="text" style="margin-left: 5px; " id="username"><button style="margin-left:  5px;" onclick="display()">set</button></div>              
+                <div></label>Image URL<label><input type="text" style="margin-left: 5px; " id="image_url"><button style="margin-left:  5px;" onclick="setimage()">set</button></div>              
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item"> <img src="download (2).jpg" alt=""></div>
+            <div class="gallery-item"> <img src="images.jpg" alt=""></div>
+            <div class="gallery-item"> <img src="Shifu_action.webp" alt=""></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+
+        </div>
+    </div>    
 </body>
 </html>

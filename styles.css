@@ -1,54 +1,65 @@
-/* Reset margin and padding for all elements */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    font-family: sans-serif;
+}
+.content{
+    border: 3px solid salmon;
+    width: 1024px; 
+    margin: auto;
+}
+ 
+.flextop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flexitem1{
+    position: relative;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Style the body */
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+.avatar{
+    background-color: rebeccapurple ;
+    background-size: auto;
+    overflow: auto;
+    width: 128px ; 
+    height: 128px; 
+    border-radius: 50%;
 }
 
-/* Style the header */
-h1 {
-    text-align: center;
+.noti{
+    position: absolute;
+    display: grid;
+    background-color: tomato ;
+    width: 3rem ; 
+    height: 3rem; 
+    border-radius: 9999px;
+    right: 0;
+    bottom: 0;
+    place-items: center;
+    color: aliceblue;
 }
 
-/* Style the content divs */
-.content {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
+.flexitem2{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-/* Style the name and name-thai paragraphs */
-.name {
-    font-size: 24px;
-    font-weight: bold;
+.gallery{
+    display: grid;
+    padding: 50px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
+    gap: 10px;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+.gallery-item{
+    background-color: beige;
+    width: 100%;
+    height: 100%;
 
-.name-thai {
-    font-size: 18px;
-    font-style: italic;
-}
-
-/* Style the list items */
-ul li {
-    margin: 5px 0;
-}
-
-/* Style the links */
-ul li a {
-    text-decoration: none;
-    color: #0077cc;
-}
-
-/* Style the profile picture */
-img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
 }
